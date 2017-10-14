@@ -1,0 +1,9 @@
+Building Mercoin
+
+See doc/readme-qt.rst for instructions on building Mercoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Mercoin.
+
+See doc/build-*.txt for instructions on building mercoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of Mercoin.
