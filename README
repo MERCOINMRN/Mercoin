@@ -35,7 +35,7 @@ Luego se lanzó MERCOIN con el algoritmo NIST5. Un algoritmo altamente eficiente
 
 Por lo dicho, MERCOIN estableció su código fuente el algoritmo scrypt, el cual a pesar de generar temperatura en el proceso de minería, es altamente compatible, muy divulgado y por ende, hay mucha información en cuanto a seguridad y sobre todo acerca de su uso. También permite tanto la minería con pequeños equipos y equipos estrictamente diseñados para este proceso denominados ASICS.
 
-Características generales[editar]
+Características generales
 Datos Técnicos
 
 Nombre: MERCOIN
@@ -61,3 +61,4 @@ Mercoin 1.3 (Scrypt)
 Enlaces externos
 MERCOIN.org (sitio web oficial)
 MERCOINTALK.com (foro)
+info@mercoin.org
