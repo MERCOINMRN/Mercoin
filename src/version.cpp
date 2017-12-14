@@ -12,7 +12,7 @@
 const std::string CLIENT_NAME("Mercoin-Security-Reloaded");
 
 // Client version number
-#define CLIENT_VERSION_SUFFIX   "1.5.2"
+#define CLIENT_VERSION_SUFFIX   "1.5.5"
 
 
 // The following part of the code determines the CLIENT_BUILD variable.

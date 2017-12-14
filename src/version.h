@@ -13,10 +13,10 @@
 //
 
 static const int CLIENT_VERSION =
-                           1400000 * CLIENT_VERSION_MAJOR
-                         +   14000 * CLIENT_VERSION_MINOR
-                         +     100 * CLIENT_VERSION_REVISION
-                         +     1.4 * CLIENT_VERSION_BUILD;
+                           1500000 * CLIENT_VERSION_MAJOR
+                         +   15000 * CLIENT_VERSION_MINOR
+                         +     150 * CLIENT_VERSION_REVISION
+                         +     1.5 * CLIENT_VERSION_BUILD;
 
 extern const std::string CLIENT_NAME;
 extern const std::string CLIENT_BUILD;

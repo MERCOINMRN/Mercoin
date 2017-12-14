@@ -23,6 +23,22 @@ Value getsubsidy(const Array& params, bool fHelp)
     return (uint64_t)GetProofOfWorkReward(0);
 }
 
+Value netmhashps(const Array& params, bool fHelp)
+{
+    if (fHelp || params.size() != 0)
+        throw runtime_error(
+            "netmhashps\n"
+            "Returns an object containing mining-related information.");
+
+    uint64_t nMinWeight = 0, nMaxWeight = 0, nWeight = 0;
+    pwalletMain->GetStakeWeight(*pwalletMain, nMinWeight, nMaxWeight, nWeight);
+
+    Object obj, diff, weight;
+    obj.push_back(Pair("netmhashps",     GetPoWMHashPS()));
+    
+    return obj;
+}
+
 Value getmininginfo(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 0)
