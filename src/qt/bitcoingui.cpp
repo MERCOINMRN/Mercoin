@@ -124,6 +124,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     centralWidget->addWidget(addressBookPage);
     centralWidget->addWidget(receiveCoinsPage);
     centralWidget->addWidget(sendCoinsPage);
+    setStyleSheet("centralWidget{background: rgb(249, 168, 39);}");
     setCentralWidget(centralWidget);
 
     // Create status bar
@@ -149,7 +150,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     frameBlocksLayout->addStretch();
     frameBlocksLayout->addWidget(labelBlocksIcon);
     frameBlocksLayout->addStretch();
-
+    setStyleSheet("QMainWindow {background: rgb(51, 51, 51);}");
     if (GetBoolArg("-staking", true))
     {
         QTimer *timerStakingIcon = new QTimer(labelStakingIcon);

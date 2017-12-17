@@ -6,16 +6,27 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>760</width>
+    <width>902</width>
     <height>380</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Address Book</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color:rgb(51, 51, 51);</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="labelExplanation">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(51, 51, 51);</string>
+     </property>
      <property name="text">
       <string>These are your Mercoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</string>
      </property>
@@ -61,6 +72,10 @@
       <widget class="QPushButton" name="newAddressButton">
        <property name="toolTip">
         <string>Create a new address</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+bottom-color: rgb(249, 168, 39);</string>
        </property>
        <property name="text">
         <string>&amp;New Address</string>

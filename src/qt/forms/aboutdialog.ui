@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>About Mercoin</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(51, 51, 51);</string>
+  </property>
   <layout class="QHBoxLayout" name="horizontalLayout_2">
    <item>
     <widget class="QLabel" name="label_4">
@@ -21,6 +24,11 @@
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color:rgb(51, 51, 51);
+</string>
      </property>
      <property name="pixmap">
       <pixmap resource="../bitcoin.qrc">:/images/about</pixmap>
@@ -49,6 +57,9 @@
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(249, 168, 39);</string>
+         </property>
          <property name="text">
           <string>&lt;b&gt;Mercoin&lt;/b&gt; version</string>
          </property>
@@ -61,6 +72,9 @@
         <widget class="QLabel" name="versionLabel">
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(249, 168, 39);</string>
          </property>
          <property name="text">
           <string notr="true">1.5</string>
@@ -90,10 +104,12 @@
        <property name="cursor">
         <cursorShape>IBeamCursor</cursorShape>
        </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
        <property name="text">
-        <string>Copyright © 2009-2014 The Bitcoin developers
-Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2017 The Mercoin developers</string>
+        <string>
+Copyright © 2017 Mercoin.org</string>
        </property>
        <property name="textInteractionFlags">
         <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -104,6 +120,10 @@ Copyright © 2017 The Mercoin developers</string>
       <widget class="QLabel" name="label_2">
        <property name="cursor">
         <cursorShape>IBeamCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(51, 51, 51);</string>
        </property>
        <property name="text">
         <string>
@@ -139,6 +159,9 @@ This product includes software developed by the OpenSSL Project for use in the O
      </item>
      <item>
       <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(51, 51, 51);</string>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
