@@ -124,7 +124,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     centralWidget->addWidget(addressBookPage);
     centralWidget->addWidget(receiveCoinsPage);
     centralWidget->addWidget(sendCoinsPage);
-    setStyleSheet("centralWidget{background: rgb(249, 168, 39);}");
+    setStyleSheet("QStackedWidget{background: rgb(249, 168, 39);}");
     setCentralWidget(centralWidget);
 
     // Create status bar
