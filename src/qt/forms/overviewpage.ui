@@ -280,6 +280,9 @@
     <layout class="QVBoxLayout" name="verticalLayout_3">
      <item>
       <widget class="QFrame" name="frame_2">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
        <property name="frameShape">
         <enum>QFrame::StyledPanel</enum>
        </property>
