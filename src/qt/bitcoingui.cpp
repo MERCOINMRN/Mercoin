@@ -124,7 +124,14 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     centralWidget->addWidget(addressBookPage);
     centralWidget->addWidget(receiveCoinsPage);
     centralWidget->addWidget(sendCoinsPage);
-    setStyleSheet("QStackedWidget{background: rgb(249, 168, 39);}");
+    setStyleSheet("overviewPage{background: rgb(249, 168, 39);}");
+    setStyleSheet("transactionsPage{background: rgb(249, 168, 39);}");
+    setStyleSheet("addressBookPage{background: rgb(249, 168, 39);}");
+    setStyleSheet("receiveCoinsPage{background: rgb(249, 168, 39);}");
+    setStyleSheet("sendCoinsPage{background: rgb(249, 168, 39);}");
+    setStyleSheet("QStackedWidget{background: rgb(51, 51, 51);}");
+    setStyleSheet("exportAction{color: rgb(255, 255, 255);}");
+    setStyleSheet("qMenuBar{background: rgb(51, 51, 51);}");
     setCentralWidget(centralWidget);
 
     // Create status bar
@@ -283,6 +290,7 @@ void BitcoinGUI::createActions()
 
     exportAction = new QAction(QIcon(":/icons/export"), tr("&Export..."), this);
     exportAction->setToolTip(tr("Export the data in the current tab to a file"));
+
     openRPCConsoleAction = new QAction(QIcon(":/icons/debugwindow"), tr("&Debug window"), this);
     openRPCConsoleAction->setToolTip(tr("Open debugging and diagnostic console"));
 
@@ -318,6 +326,7 @@ void BitcoinGUI::createMenuBar()
     file->addAction(verifyMessageAction);
     file->addSeparator();
     file->addAction(quitAction);
+
 
     QMenu *settings = appMenuBar->addMenu(tr("&Settings"));
     settings->addAction(encryptWalletAction);
