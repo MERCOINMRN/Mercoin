@@ -59,7 +59,11 @@
     </widget>
    </item>
    <item row="5" column="1">
-    <widget class="BitcoinAmountField" name="payAmount"/>
+    <widget class="BitcoinAmountField" name="payAmount">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
    </item>
    <item row="4" column="1">
     <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -73,6 +77,9 @@
        </property>
        <property name="toolTip">
         <string>Enter a label for this address to add it to your address book</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
        </property>
       </widget>
      </item>
@@ -103,6 +110,9 @@
       <widget class="QValidatedLineEdit" name="payTo">
        <property name="toolTip">
         <string>The address to send the payment to  (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
        </property>
        <property name="maxLength">
         <number>34</number>

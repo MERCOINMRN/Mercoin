@@ -124,14 +124,10 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     centralWidget->addWidget(addressBookPage);
     centralWidget->addWidget(receiveCoinsPage);
     centralWidget->addWidget(sendCoinsPage);
-    setStyleSheet("overviewPage{background: rgb(249, 168, 39);}");
-    setStyleSheet("transactionsPage{background: rgb(249, 168, 39);}");
-    setStyleSheet("addressBookPage{background: rgb(249, 168, 39);}");
-    setStyleSheet("receiveCoinsPage{background: rgb(249, 168, 39);}");
-    setStyleSheet("sendCoinsPage{background: rgb(249, 168, 39);}");
+    setStyleSheet("overviewPage{color: rgb(249, 168, 39);}");
     setStyleSheet("QStackedWidget{background: rgb(51, 51, 51);}");
-    setStyleSheet("exportAction{color: rgb(255, 255, 255);}");
-    setStyleSheet("qMenuBar{background: rgb(51, 51, 51);}");
+    setStyleSheet("qBar{background: rgb(51, 51, 51);}");
+    setStyleSheet("qtoolbar{background: rgb(249, 168, 39);}");
     setCentralWidget(centralWidget);
 
     // Create status bar

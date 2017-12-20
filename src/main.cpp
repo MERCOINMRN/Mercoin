@@ -1018,7 +1018,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 //Luigi
 
 //security
-            if(nBestHeight > 210000)
+            if(nBestHeight > 225000)
             	nSubsidy = 2 * COIN;
 //Security
     if (fDebug && GetBoolArg("-printcreation"))

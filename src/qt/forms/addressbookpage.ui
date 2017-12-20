@@ -46,6 +46,9 @@ background-color:rgb(51, 51, 51);</string>
      <property name="toolTip">
       <string>Double-click to edit address or label</string>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
      <property name="tabKeyNavigation">
       <bool>false</bool>
      </property>
