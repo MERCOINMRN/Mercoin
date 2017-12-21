@@ -124,11 +124,14 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     centralWidget->addWidget(addressBookPage);
     centralWidget->addWidget(receiveCoinsPage);
     centralWidget->addWidget(sendCoinsPage);
-    setStyleSheet("overviewPage{color: rgb(249, 168, 39);}");
-    setStyleSheet("QStackedWidget{background: rgb(51, 51, 51);}");
-    setStyleSheet("qBar{background: rgb(51, 51, 51);}");
-    setStyleSheet("qtoolbar{background: rgb(249, 168, 39);}");
+    //Luigi
+    sendCoinsPage->setStyleSheet("sendCoinsPage{background: rgb(249, 168, 39);}");
+    receiveCoinsPage->setStyleSheet("receiveCoinsPage{background: rgb(249, 168, 39);}");
+    addressBookPage->setStyleSheet("addressBookPage{background: rgb(249, 168, 39);}");
+    transactionsPage->setStyleSheet("transactionsPage{background: rgb(249, 168, 39);}");
     setCentralWidget(centralWidget);
+    setStyleSheet("QMainWindow{background: rgb(51, 51, 51);}");
+
 
     // Create status bar
     statusBar();
@@ -153,7 +156,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     frameBlocksLayout->addStretch();
     frameBlocksLayout->addWidget(labelBlocksIcon);
     frameBlocksLayout->addStretch();
-    setStyleSheet("QMainWindow {background: rgb(51, 51, 51);}");
+
     if (GetBoolArg("-staking", true))
     {
         QTimer *timerStakingIcon = new QTimer(labelStakingIcon);
@@ -322,6 +325,10 @@ void BitcoinGUI::createMenuBar()
     file->addAction(verifyMessageAction);
     file->addSeparator();
     file->addAction(quitAction);
+    //Luigi
+    file->setPalette(*(new QPalette(QColor::fromRgb( 51, 51, 51))));
+    QString ss("color: white;");
+    file->setStyleSheet(ss);
 
 
     QMenu *settings = appMenuBar->addMenu(tr("&Settings"));
@@ -331,12 +338,18 @@ void BitcoinGUI::createMenuBar()
     settings->addAction(lockWalletAction);
     settings->addSeparator();
     settings->addAction(optionsAction);
+    //Luigi
+    settings->setPalette(*(new QPalette(QColor::fromRgb( 51, 51, 51))));
+    settings->setStyleSheet(ss);
 
     QMenu *help = appMenuBar->addMenu(tr("&Help"));
     help->addAction(openRPCConsoleAction);
     help->addSeparator();
     help->addAction(aboutAction);
     help->addAction(aboutQtAction);
+    //Luigi
+    help->setPalette(*(new QPalette(QColor::fromRgb( 51, 51, 51))));
+    help->setStyleSheet(ss);
 }
 
 void BitcoinGUI::createToolBars()
@@ -352,6 +365,9 @@ void BitcoinGUI::createToolBars()
     QToolBar *toolbar2 = addToolBar(tr("Actions toolbar"));
     toolbar2->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
     toolbar2->addAction(exportAction);
+    //Luigi
+    toolbar->setStyleSheet("QToolButton {background-color: rgb(249, 168, 39);}");
+    toolbar2->setStyleSheet("QToolButton {color: rgb(249, 168, 39);}");
 }
 
 void BitcoinGUI::setClientModel(ClientModel *clientModel)
